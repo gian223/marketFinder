@@ -63,7 +63,7 @@
         <!-- Navbar: Start -->
         <nav class="layout-navbar py-2 bg-white">
             <div class="container">
-                <div class="navbar navbar-expand-lg px-3 px-md-4">
+                <div class="navbar navbar-expand-lg">
                     <!-- Menu logo wrapper: Start -->
                     <div class="navbar-brand d-flex py-0 py-lg-2 me-4">
                         <!-- Mobile menu toggle: Start-->
@@ -281,11 +281,32 @@
 
         <div data-bs-spy="scroll" class="scrollspy-example mt-1">
             <!-- Hero: Start -->
-            <section id="hero-animation">
-                <div id="landingHero" class="section-py landing-hero position-relative rounded-0">
+            <section
+                id="hero-animation"
+                style="
+                    background: linear-gradient(to right, rgba(255, 255, 255, 0.99), rgba(255, 255, 255, 0.75)) fixed,
+                        url(https://media.istockphoto.com/id/1282605662/vector/farmers-market-sketched-icons.jpg?s=2048x2048&w=is&k=20&c=iOwOrUOT6dpG0AKsnHQtWzDVnCZdBhbVB6nhOf324vE=);
+                    background-size: cover;
+                    background-position: 0px 100px;
+                    background-repeat: no-repeat;
+                    border-bottom: 1px solid whitesmoke;
+                ">
+                <div
+                    id="landingHero"
+                    class="section-py landing-hero position-relative rounded-0"
+                    style="
+                        background: linear-gradient(to right, rgb(214 214 214 / 10%), rgba(277, 277, 277, 0.1)) fixed,
+                            url(https://media.istockphoto.com/id/1167403932/vector/isometric-of-people-shopping-at-farmers-market-illustration.jpg?s=2048x2048&w=is&k=20&c=K0FSxqtfBggbv5GnWOF-upkGmy7nvo634s0RjuWSB-8=);
+                        background-size: contain;
+                        background-position: 220px 30px;
+                        background-repeat: no-repeat;
+                    ">
                     <div class="container">
                         <div class="hero-text-box text-center">
-                            <h1 class="text-primary hero-title display-6 fw-bold">Market Finder</h1>
+                            <!-- <h1 class="text-primary hero-title display-6 fw-bold"> -->
+                            <h1 class="text-primary display-6 fw-bold" style="color: #303030 !important">
+                                Market Finder
+                            </h1>
                             <h2 class="hero-sub-title h6 mb-4 pb-1">Do we need a slogan?</h2>
                             <div class="landing-hero-btn d-inline-block position-relative">
                                 <span class="hero-btn-item position-absolute d-none d-md-flex text-heading"
@@ -295,7 +316,7 @@
                                         alt="Join community arrow"
                                         class="scaleX-n1-rtl"
                                 /></span>
-                                <a href="#landingPricing" class="btn btn-primary btn-lg">Find Markets</a>
+                                <a href="#landingPricing" class="btn btn-success btn-lg">Find Markets</a>
                             </div>
                         </div>
                     </div>
